@@ -44,10 +44,77 @@ class FirstScreen extends StatelessWidget{
           ), onPressed: () {},
         ),
       ),
-      body: Padding(
-        padding: EdgeInsets.all(10),
-        child: const Text('ini padding'),
-      ),
+      body:
+          Column(
+            children: <Widget>[
+              Text("MainAxisAlignment.spaceEvenly"),
+              Padding(
+                padding: EdgeInsets.all(5),
+              ),
+              Row(mainAxisAlignment: MainAxisAlignment.spaceEvenly,
+                children: <Widget>[
+                  Icon(Icons.share),
+                  Icon(Icons.thumb_down),
+                  Icon(Icons.thumb_up),
+                ],
+              ),
+              Text("MainAxisAlignment.spaceAround"),
+              Padding(
+                padding: EdgeInsets.all(5),
+              ),
+              Row(mainAxisAlignment: MainAxisAlignment.spaceAround,
+                children: <Widget>[
+                  Icon(Icons.share),
+                  Icon(Icons.thumb_down),
+                  Icon(Icons.thumb_up),
+                ],
+              ),
+              Text("MainAxisAlignment.spaceBetween"),
+              Padding(
+                padding: EdgeInsets.all(5),
+              ),
+              Row(mainAxisAlignment: MainAxisAlignment.spaceBetween,
+                children: <Widget>[
+                  Icon(Icons.share),
+                  Icon(Icons.thumb_down),
+                  Icon(Icons.thumb_up),
+                ],
+              ),
+              Text("MainAxisAlignment.start"),
+              Padding(
+                padding: EdgeInsets.all(5),
+              ),
+              Row(mainAxisAlignment: MainAxisAlignment.start,
+                children: <Widget>[
+                  Icon(Icons.share),
+                  Icon(Icons.thumb_down),
+                  Icon(Icons.thumb_up),
+                ],
+              ),
+              Text("MainAxisAlignment.end"),
+              Padding(
+                padding: EdgeInsets.all(5),
+              ),
+              Row(mainAxisAlignment: MainAxisAlignment.end,
+                children: <Widget>[
+                  Icon(Icons.share),
+                  Icon(Icons.thumb_down),
+                  Icon(Icons.thumb_up),
+                ],
+              ),
+              Text("MainAxisAlignment.center"),
+              Padding(
+                padding: EdgeInsets.all(5),
+              ),
+              Row(mainAxisAlignment: MainAxisAlignment.center,
+                children: <Widget>[
+                  Icon(Icons.share),
+                  Icon(Icons.thumb_down),
+                  Icon(Icons.thumb_up),
+                ],
+              ),
+            ],
+          ),
       floatingActionButton: FloatingActionButton(
         child: const Icon(Icons.add),
         onPressed: (){},
