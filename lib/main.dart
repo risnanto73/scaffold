@@ -46,8 +46,7 @@ class FirstScreen extends StatelessWidget{
       ),
       body: Container(
         color: Colors.blue,
-        width: 200,
-        height: 100,
+        margin: const EdgeInsets.all(10),
         child: const Text(
           'Hi',
           style: TextStyle(fontSize: 40),
